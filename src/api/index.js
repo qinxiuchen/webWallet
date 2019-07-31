@@ -21,7 +21,7 @@ async function postToNode(dataToNode) {
 
 export async function getCurrentBlock(params) {
   const dataToSrv = JSON.stringify({ jsonrpc: '2.0',
-    method: 'ft_getCurrentBlock',
+    method: 'gaur_getCurrentBlock',
     params,
     id: 1 });
   return postToNode({
@@ -31,7 +31,7 @@ export async function getCurrentBlock(params) {
 
 export async function getBlockByHash(params) {
   const dataToSrv = JSON.stringify({ jsonrpc: '2.0',
-    method: 'ft_getBlockByHash',
+    method: 'gaur_getBlockByHash',
     params,
     id: 1 });
   return axios({
@@ -42,7 +42,7 @@ export async function getBlockByHash(params) {
 
 export async function getBlockByNum(params) {
   const dataToSrv = JSON.stringify({ jsonrpc: '2.0',
-    method: 'ft_getBlockByNumber',
+    method: 'gaur_getBlockByNumber',
     params,
     id: 1 });
   return axios({
@@ -53,7 +53,7 @@ export async function getBlockByNum(params) {
 
 export async function getTransactionByHash(params) {
   const dataToSrv = JSON.stringify({ jsonrpc: '2.0',
-    method: 'ft_getTransactionByHash',
+    method: 'gaur_getTransactionByHash',
     params,
     id: 1 });
   return axios({
@@ -64,7 +64,7 @@ export async function getTransactionByHash(params) {
 
 export async function getTransactionReceipt(params) {
   const dataToSrv = JSON.stringify({ jsonrpc: '2.0',
-    method: 'ft_getTransactionReceipt',
+    method: 'gaur_getTransactionReceipt',
     params,
     id: 1 });
   return axios({
@@ -75,7 +75,7 @@ export async function getTransactionReceipt(params) {
 
 export async function getTxNumByBlockHash(params) {
   const dataToSrv = JSON.stringify({ jsonrpc: '2.0',
-    method: 'ft_getTxNumByBlockHash',
+    method: 'gaur_getTxNumByBlockHash',
     params,
     id: 1 });
   return axios({
@@ -86,7 +86,7 @@ export async function getTxNumByBlockHash(params) {
 
 export async function getTxNumByBlockNum(params) {
   const dataToSrv = JSON.stringify({ jsonrpc: '2.0',
-    method: 'ft_getTxNumByBlockNum',
+    method: 'gaur_getTxNumByBlockNum',
     params,
     id: 1 });
   return axios({
@@ -97,7 +97,7 @@ export async function getTxNumByBlockNum(params) {
 
 export async function getTotalTxNumByBlockHash(params) {
   const dataToSrv = JSON.stringify({ jsonrpc: '2.0',
-    method: 'ft_getTotalTxNumByBlockHash',
+    method: 'gaur_getTotalTxNumByBlockHash',
     params,
     id: 1 });
   return axios({
@@ -108,7 +108,7 @@ export async function getTotalTxNumByBlockHash(params) {
 
 export async function getTotalTxNumByBlockNum(params) {
   const dataToSrv = JSON.stringify({ jsonrpc: '2.0',
-    method: 'ft_getTotalTxNumByBlockNum',
+    method: 'gaur_getTotalTxNumByBlockNum',
     params,
     id: 1 });
   return axios({
