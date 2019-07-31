@@ -34,22 +34,22 @@ const getMethods = ['account_accountIsExist',
                     'account_getAccountBalanceByTime',
                     'account_getAssetAmountByTime',
                     'account_getSnapshotTime',
-                    'ft_sendRawTransaction',
-                    'ft_getBlockByHash',
-                    'ft_getBlockByNumber',
-                    'ft_getCurrentBlock',
-                    'ft_getTransactionByHash',
-                    'ft_getTransactionReceipt',
-                    'ft_getBlockAndResultByNumber',
-                    'ft_getTxsByAccount',
-                    'ft_getTxsByBloom',
-                    'ft_getInternalTxByAccount',
-                    'ft_getInternalTxByBloom',
-                    'ft_getInternalTxByHash',
-                    'ft_gasPrice',
-                    'ft_call',
-                    'ft_estimateGas',
-                    'ft_getChainConfig',
+                    'gaur_sendRawTransaction',
+                    'gaur_getBlockByHash',
+                    'gaur_getBlockByNumber',
+                    'gaur_getCurrentBlock',
+                    'gaur_getTransactionByHash',
+                    'gaur_getTransactionReceipt',
+                    'gaur_getBlockAndResultByNumber',
+                    'gaur_getTxsByAccount',
+                    'gaur_getTxsByBloom',
+                    'gaur_getInternalTxByAccount',
+                    'gaur_getInternalTxByBloom',
+                    'gaur_getInternalTxByHash',
+                    'gaur_gasPrice',
+                    'gaur_call',
+                    'gaur_estimateGas',
+                    'gaur_getChainConfig',
                     'dpos_info',
                     'dpos_irreversible',
                     'dpos_votersByCandidate',
@@ -781,13 +781,13 @@ export default class RawTxConstructor extends Component {
           <br />
           <Input hasClear
             style={styles.commonElement}
-            addonBefore="Gas单价（Gaft）:"
+            addonBefore="Gas单价（GaGaur）:"
             size="medium"
             defaultValue={this.state.actionCookie.gasPrice}
             onChange={this.handleActionElementChange.bind(this, 'gasPrice')}
           />
           <br />
-          1Gaft = 10<sup>-9</sup>ft = 10<sup>9</sup>aft
+          1Gagaur = 10<sup>-9</sup>gaur = 10<sup>9</sup>agaur
           <br />
           <br />
           <Input hasClear

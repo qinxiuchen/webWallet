@@ -7,7 +7,7 @@ export default class Logo extends PureComponent {
     return (
       <div className="logo" style={{}}>
         <Link to="/" className="logo-text">
-          Fractal
+          GAUR
         </Link>
       </div>
     );
